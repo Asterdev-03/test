@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="Dashboard.css" />
+  </head>
+  <body>
+    <h1>Teacher Dashboard</h1>
+    <div class="container">
+      <div class="card">
+        <h2>Course Name</h2>
+        <button class="view-btn">View</button>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="card">
+        <h2>Course Name</h2>
+        <button class="view-btn">View</button>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="card">
+        <h2>Course Name</h2>
+        <button class="view-btn">View</button>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <!-- 
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <h2>Quiz 1</h2>
+          <button class="question-btn">View Questions</button>
+        </div>
+        <div class="quiz-content">
+          <p>Quiz Description</p>
+        </div>
+      </div> -->
+
+      <div class="popup">
+        <div class="popup-content">
+          <!-- Quiz questions go here -->
+          <h2>Quiz Questions</h2>
+          <ul>
+            <li>Question 1</li>
+            <li>Question 2</li>
+            <li>Question 3</li>
+            <li>Question 4</li>
+            <li>Question 5</li>
+          </ul>
+          <button class="close-btn">Close</button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <!--       <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Quiz Questions</h2>
+          <ul>
+            <li>Question 1</li>
+            <li>Question 2</li>
+            <li>Question 3</li>
+            <li>Question 4</li>
+            <li>Question 5</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script src="script.js"></script>
+<script>
+  // Add the JavaScript code here
+  const viewBtns = document.querySelectorAll(".view-btn");
+  const popup = document.querySelector(".popup");
+  const closeBtn = document.querySelector(".close-btn");
+
+  viewBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      popup.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+</script>

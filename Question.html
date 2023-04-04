@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Page</title>
+    <link rel="stylesheet" type="text/css" href="Qstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Quiz Page</h1>
+      </div>
+      <div class="quiz">
+        <div class="question">
+          <p>Question 1: What is the capital of France?</p>
+        </div>
+        <div class="options">
+          <ul>
+            <li>
+              <label><input type="radio" name="q1" value="a" />a) Berlin</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="b" />b) Paris</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="c" />c) Rome</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="d" />d) London</label>
+            </li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button id="prev" onclick="prevQuestion()">Previous</button>
+          <button id="next" onclick="nextQuestion()">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
